@@ -7,16 +7,10 @@ class CashRegister
     @items=[]
   end
 
-  def add_item(item_info)
-    intem_info_seperated=item_info.split(",")
-    if intem_info_seperated.length == 3
-      added_value=intem_info_seperated[1]*intem_info_seperated[2]
+  def add_item(item,price,quantity=1)
+      added_value=price * quantity
       @total += added_value
       @items << intem_info_seperated[0]
-    else
-      @total += intem_info_seperated[1]
-      @items << intem_info_seperated[0]
-    end
   end
 
   def apply_discount
