@@ -8,6 +8,8 @@ class CashRegister
   def add_item(item_info)
     intem_info_seperated=item_info.split(",")
     if intem_info_seperated.size== 3
+      added_value=intem_info_seperated[1]*intem_info_seperated[2]
+      @total=@total + 
     else
     end
   end
