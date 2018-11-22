@@ -14,4 +14,8 @@ class CashRegister
       @total += intem_info_seperated[1]
     end
   end
+
+  def apply_discount
+    @total = (100-@discount) * @total
+  end
 end
