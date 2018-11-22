@@ -31,7 +31,7 @@ class CashRegister
   end
 
   def void_last_transaction
-
+    items_in_last_transaction = @quantities[@quantities.length - 1 ]
   end
 
 end
