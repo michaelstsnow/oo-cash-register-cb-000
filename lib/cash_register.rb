@@ -20,7 +20,7 @@ class CashRegister
     #@total = @total - ((@discount/100) * @total)
     @total =99999
     if @discount > 0
-      "After the discount, the total comes to #{@total}."
+      "After the discount, the total comes to $#{@total}."
     else
       "There is no discount to apply."
     end
