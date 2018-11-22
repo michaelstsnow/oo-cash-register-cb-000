@@ -13,6 +13,7 @@ class CashRegister
       added_value=price * quantity
       @total += added_value
       @quantities << quantity
+      @prices << price
       while quantity >=1
         @items << item
         quantity -= 1
