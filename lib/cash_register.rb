@@ -32,8 +32,9 @@ class CashRegister
 
   def void_last_transaction
     quantity_length=@quantities.length
-    @quantities.[quantity_length-1]
+    this_quantity=@quantities.[quantity_length-1]
     @total -= @price[@quantities.length-1]
+    
     @items.pop(@quantities.[quantity_length-1])
     @price.pop
     @quantities.pop
