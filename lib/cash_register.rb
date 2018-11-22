@@ -6,5 +6,6 @@ class CashRegister
   end
 
   def add_item(item_info)
+    intem_info_seperated=item_info.split(",")
   end
 end
