@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor(:discount,:total,:items)
+  attr_accessor(:discount,:total,:items,:quantities)
 
   def initialize(discount=0)
     @discount=discount.to_f
