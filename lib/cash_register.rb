@@ -5,11 +5,13 @@ class CashRegister
     @discount=discount.to_f
     @total=0
     @items=[]
+    @quantities=[]
   end
 
   def add_item(item,price,quantity=1)
       added_value=price * quantity
       @total += added_value
+      @quantities <<
       while quantity >=1
         @items << item
         quantity -= 1
@@ -27,7 +29,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    
+
   end
 
 end
