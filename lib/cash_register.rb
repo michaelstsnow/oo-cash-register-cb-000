@@ -35,6 +35,8 @@ class CashRegister
     for items_added
       @total -= @price[@quantities.length-1]
     end
+    @price.pop
+    @quantities.pop
   end
 
 end
