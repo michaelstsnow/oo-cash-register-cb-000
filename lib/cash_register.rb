@@ -6,7 +6,7 @@ class CashRegister
     @total=0
     @items=[]
     @quantities=[]
-    
+    @prices=[]
   end
 
   def add_item(item,price,quantity=1)
@@ -32,7 +32,7 @@ class CashRegister
   def void_last_transaction
     items_added=@quantities.length
     for items_added
-      @total -= 
+      @total -=
     end
   end
 
