@@ -5,6 +5,6 @@ class CashRegister
     @total=0
   end
 
-  def add_item
+  def add_item(item_info)
   end
 end
