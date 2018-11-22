@@ -33,7 +33,7 @@ class CashRegister
   def void_last_transaction
     items_added=@quantities.length
     for items_added
-      @total -=
+      @total -= @price[@quantities.length]
     end
   end
 
