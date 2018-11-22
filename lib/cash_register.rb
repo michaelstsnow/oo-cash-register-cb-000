@@ -34,7 +34,7 @@ class CashRegister
     quantity_length=@quantities.length
     this_quantity=@quantities.[quantity_length-1]
     @total -= @price[@quantities.length-1]*this_quantity
-    
+
     @items.pop(@quantities.[quantity_length-1])
     @price.pop
     @quantities.pop
