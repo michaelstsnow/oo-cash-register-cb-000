@@ -35,6 +35,7 @@ class CashRegister
     @total -= items_in_last_transaction * @prices[@prices.length - 1]
     @prices.pop
     @quantities.pop
+    @items.pop(items_in_last_transaction)
   end
 
 end
