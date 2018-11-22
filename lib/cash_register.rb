@@ -29,7 +29,8 @@ class CashRegister
   end
 
   def void_last_transaction
-    @quantities.length
+    items_added=@quantities.length
+    for 
   end
 
 end
