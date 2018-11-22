@@ -4,4 +4,5 @@ class CashRegister
     @discount=discount
     @total=0
   end
+
 end
