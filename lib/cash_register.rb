@@ -9,7 +9,7 @@ class CashRegister
     intem_info_seperated=item_info.split(",")
     if intem_info_seperated.size== 3
       added_value=intem_info_seperated[1]*intem_info_seperated[2]
-      @total=@total + 
+      @total=@total + added_value
     else
     end
   end
