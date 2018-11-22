@@ -1,5 +1,6 @@
 class CashRegister
   attr_accessor(:discount,:total,:items)
+  
   def initialize(discount = 0)
     @discount=discount
     @total=0
@@ -11,8 +12,10 @@ class CashRegister
     if intem_info_seperated.size== 3
       added_value=intem_info_seperated[1]*intem_info_seperated[2]
       @total += added_value
+      @items << intem_info_seperated[0]
     else
       @total += intem_info_seperated[1]
+      @items << intem_info_seperated[0]
     end
   end
 
