@@ -7,5 +7,8 @@ class CashRegister
 
   def add_item(item_info)
     intem_info_seperated=item_info.split(",")
+    if intem_info_seperated.size== 3
+    else
+    end
   end
 end
