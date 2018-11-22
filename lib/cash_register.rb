@@ -36,6 +36,7 @@ class CashRegister
     @prices.pop
     @quantities.pop
     @items.pop(items_in_last_transaction)
+    @total
   end
 
 end
